@@ -5,7 +5,7 @@ import shop from "../../assets/img/shop.png";
 import user from "../../assets/img/user.png";
 const Header = () => {
   return (
-    <div className={styles["header-all"]}>
+    <div className={styles["header"]}>
       <ul className={styles["nav"]}>
         <li>
           <a href="#">Home</a>
