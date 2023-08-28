@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className={styles["search"]}>
         <div className={styles["search-btn"]}>
-          <p>Search</p>
+          <input type="text" placeholder="Search" />
           <div className={styles["icon-search"]}>
             <img className={styles["icon-title"]} src={search} alt="Icon" />
           </div>

@@ -39,16 +39,29 @@
 .search-btn {
     display: flex;
     align-items: center;
-    padding: 9px 19px;
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.35);
+    overflow: hidden; 
   }
+.search-btn input {
+    width: 113px;
+    flex: 1; 
+    padding: 9px 19px;
+    border: none;
+    background: transparent;
+}
+.search-btn input:focus {
+    outline: none;
+}
+.icon-search {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
 .search-btn > p {
     font-size: 14px;
   }
-.icon-search {
-    padding-left: 98px;
-  }
+
 .icon-shop {
     padding: 0 26px;
   }
