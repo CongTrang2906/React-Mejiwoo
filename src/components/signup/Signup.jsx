@@ -62,7 +62,8 @@ const Signup = () => {
               />
               <label className={styles["inf-label"]} htmlFor="vehicle1">
                 {" "}
-                I agree to all the Terms and Privacy Policy
+                I agree to all the <strong>Terms</strong> and{" "}
+                <strong>Privacy Policy</strong>
               </label>
             </div>
             <div className={styles["btn-signup-all"]}>

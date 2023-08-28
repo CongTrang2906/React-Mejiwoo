@@ -1,6 +1,10 @@
-.products-img {
+.image-item{
     width: 100%;
-    height: auto;
+}
+.image-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .products-name {
     text-align: center;
@@ -8,9 +12,7 @@
     font-weight: 500;
     margin-top: 26px;
 }
-.seasion-item{
-    overflow: hidden;
-}
+
 .image-item img {
     width: 100%;
     height: auto;
