@@ -1,36 +1,37 @@
 import React from "react";
-import styles from "./Signup.module.css";
+import styles from "./SignUp.module.css";
 import point from "../../assets/img/point.png";
 import fb from "../../assets/img/fb.png";
 import gg from "../../assets/img/gg.png";
+import { SignUpData } from "../../model/SignUpData";
 
-const Signup = () => {
+const SignUp = () => {
   return (
     <div className={styles["content-section-singup"]}>
       <div className={styles["signup-product-all"]}>
         <div className={styles["products-signup"]}>
-          <div className={styles["signup-infomation"]}>
-            <p className={styles["title-signup"]}>
-              Get more benefits by Sign Up & Join Mejiwoo Community!
-            </p>
-            <div className={styles["inf-title-free"]}>
-              <img src={point} alt="" className={styles["icon"]} />
-              <p>FREE Special Gift to a new member</p>
-            </div>
-            <div className={styles["inf-title-point"]}>
-              <img src={point} alt="" className={styles["icon"]} />
-              <p>Get 2x JIWOO Points to purchase items</p>
-            </div>
+          {SignUpData.map((item, index) => (
+            <div key={index} className={styles["signup-infomation"]}>
+              <p className={styles["title-signup"]}>{item.title}</p>
+              <div className={styles["inf-title-free"]}>
+                <img src={point} alt="" className={styles["icon"]} />
+                <p>{item.titleFree}</p>
+              </div>
+              <div className={styles["inf-title-point"]}>
+                <img src={point} alt="" className={styles["icon"]} />
+                <p>{item.titlePoint}</p>
+              </div>
 
-            <div className={styles["inf-title-voucher"]}>
-              <img src={point} alt="" className={styles["icon"]} />
-              <p>Get special voucher code every month</p>
+              <div className={styles["inf-title-voucher"]}>
+                <img src={point} alt="" className={styles["icon"]} />
+                <p>{item.titleVoucher}</p>
+              </div>
+              <div className={styles["inf-title-upto"]}>
+                <img src={point} alt="" className={styles["icon"]} />
+                <p>{item.titleUpto}</p>
+              </div>
             </div>
-            <div className={styles["inf-title-upto"]}>
-              <img src={point} alt="" className={styles["icon"]} />
-              <p>Claim Voucher Disc. Up To 50%</p>
-            </div>
-          </div>
+          ))}
           <div className={styles["input-infomation"]}>
             <div>
               <input
@@ -91,4 +92,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignUp;

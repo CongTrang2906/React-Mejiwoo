@@ -5,7 +5,7 @@ import OurProduct from './components/ourProduct/OurProduct';
 import SaidProduct from './components/saidProduct/SaidProduct';
 import Season from './components/season/Season';
 import Seller from './components/seller/Seller';
-import Signup from './components/signUp/Signup';
+import SignUp from './components/signUp/SignUp';
 import Slider from './components/slider/Slider';
 import SliderSeller from './components/sliderSeller/SliderSeller';
 import Footer from './components/footer/Footer';
@@ -19,7 +19,7 @@ function App() {
       <SliderSeller/>
       <OurProduct/>
       <SaidProduct/>
-      <Signup/>
+      <SignUp/>
       <Contact/>
       <Footer/>
     </div>
